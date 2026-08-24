@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useLanguage } from '../context/useLanguage'
 import { AnabionDeepDive } from './AnabionDeepDive'
 import { InditexDeepDive } from './InditexDeepDive'
+import { SuntoryDeepDive } from './SuntoryDeepDive'
 import './Impact.css'
 
 const wordmarkIds = new Set(['inditex', 'anabion', 'suntory', 'ubits', 'bavaria'])
@@ -105,6 +106,8 @@ export function Impact() {
                           <InditexDeepDive />
                         ) : active.id === 'anabion' ? (
                           <AnabionDeepDive />
+                        ) : active.id === 'suntory' ? (
+                          <SuntoryDeepDive />
                         ) : (
                           <>
                             <p className="impact__panel-kicker">{active.name}</p>

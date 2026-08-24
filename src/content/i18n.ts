@@ -20,7 +20,7 @@ export const content = {
     },
     metrics: {
       eyebrow: 'Results',
-      title: 'What the work moved',
+      title: 'How I moved the needle',
       items: [
         { value: '90%', label: 'NPS — Middle Leadership Programme' },
         { value: '53% → 89%', label: 'Individual development plan adoption' },
@@ -59,6 +59,24 @@ export const content = {
           pause: 'Pause',
           expand: 'Expand',
           close: 'Close',
+        },
+        suntory: {
+          eyebrow: 'IE × Suntory · FMCG · Toledo · 2025',
+          title: 'Empowering Factory Teams',
+          challenge:
+            'At Suntory’s Toledo factory, HR needed to increase operators’ use of MySU — the internal LMS. After plant visits and 12 interviews with operators and leaders, the issue was not only “lack of use”: most leaders did little follow-up and barely promoted MySU; access was hard — little time, few devices, password friction, slow UX; and the content did not feel useful against real work on the plant floor.',
+          solution:
+            'The proposed solution was designed around three pillars: leadership habits (MySU role modeling and visible reinforcement of learning); frictionless learning at factory pace (MySU on line tablets and mobile, simplified login, 7–10 min microlearning for downtime); and Legacy Learning, a repository where plant know-how is captured and shared. Goal: purposeful digital development on the factory floor — measurable and aligned with the operating culture.',
+          expand: 'Expand',
+          close: 'Close',
+          prev: 'Previous',
+          next: 'Next',
+          slides: [
+            'Challenges identified',
+            'Three solution pillars',
+            'Frictionless learning in the factory',
+            'Legacy Learning · Chishikiko',
+          ],
         },
       },
       timeline: [
@@ -116,7 +134,7 @@ export const content = {
     },
     metrics: {
       eyebrow: 'Resultados',
-      title: 'Lo que el trabajo movió',
+      title: 'Cómo generé impacto',
       items: [
         { value: '90%', label: 'NPS — Middle Leadership Programme' },
         { value: '53% → 89%', label: 'Adopción de planes de desarrollo individual' },
@@ -155,6 +173,24 @@ export const content = {
           pause: 'Pausar',
           expand: 'Ampliar',
           close: 'Cerrar',
+        },
+        suntory: {
+          eyebrow: 'IE × Suntory · FMCG · Toledo · 2025',
+          title: 'Empowering Factory Teams',
+          challenge:
+            'En la fábrica de Suntory en Toledo, HR necesitaba incrementar el uso de MySU —el LMS interno— entre operarios. Tras visitas a planta y 12 entrevistas con operarios y líderes, el problema no era solo “falta de uso”: la mayoría de líderes no hacían follow-up ni promovían MySU; no había fácil acceso: poco tiempo, pocos dispositivos, inconvenientes con contraseñas, un UX lento; y el contenido no se percibía útil frente al trabajo real en la planta.',
+          solution:
+            'La solución propuesta se diseñó bajo tres ejes: hábitos de liderazgo (role modeling de MySU, y refuerzo visible del aprendizaje); aprendizaje sin fricción en el ritmo de fábrica (MySU en tablets de línea y móvil, login simplificado, microlearning de 7–10 min para el downtime); y Legacy Learning, un repositorio donde el know-how de la planta se captura y se comparte. Objetivo: garantizar el desarrollo digital con propósito en la fábrica, que fuera medible y alineado a la cultura operativa.',
+          expand: 'Ampliar',
+          close: 'Cerrar',
+          prev: 'Anterior',
+          next: 'Siguiente',
+          slides: [
+            'Retos identificados',
+            'Tres ejes de solución',
+            'Aprendizaje sin fricción en fábrica',
+            'Legacy Learning · Chishikiko',
+          ],
         },
       },
       timeline: [
