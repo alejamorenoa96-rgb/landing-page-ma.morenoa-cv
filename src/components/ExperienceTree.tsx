@@ -5,6 +5,7 @@ import {
   type Milestone,
   type MilestoneDetail,
 } from '../content/experience'
+import type { ExperienceFocusTarget } from '../content/metricTargets'
 import { useLanguage } from '../context/useLanguage'
 import './ExperienceTree.css'
 
@@ -122,11 +123,15 @@ function MilestoneItem({
   const hasDetail = Boolean(milestone.detail)
 
   if (!hasDetail) {
-    return <li className="exp-tree__hit">{milestone.label}</li>
+    return (
+      <li className="exp-tree__hit" id={`milestone-${milestone.id}`}>
+        {milestone.label}
+      </li>
+    )
   }
 
   return (
-    <li className="exp-tree__hit exp-tree__hit--action">
+    <li className="exp-tree__hit exp-tree__hit--action" id={`milestone-${milestone.id}`}>
       <button type="button" className="exp-tree__hit-btn" onClick={() => onOpen(milestone)} aria-label={`${openHint}: ${milestone.label}`}>
         <span>{milestone.label}</span>
         <span className="exp-tree__hit-cue" aria-hidden="true">
@@ -137,12 +142,46 @@ function MilestoneItem({
   )
 }
 
-export function ExperienceTree() {
+export function ExperienceTree({
+  focusTarget = null,
+  onFocusHandled,
+}: {
+  focusTarget?: ExperienceFocusTarget | null
+  onFocusHandled?: () => void
+}) {
   const { lang } = useLanguage()
   const copy = experienceContent[lang]
   const [active, setActive] = useState<Milestone | null>(null)
   const [openCompanies, setOpenCompanies] = useState<Record<string, boolean>>({})
   const [openRoles, setOpenRoles] = useState<Record<string, boolean>>({})
+
+  useEffect(() => {
+    if (!focusTarget) return
+
+    const company = copy.companies.find((item) => item.id === focusTarget.companyId)
+    const role = company?.roles.find((item) => item.id === focusTarget.roleId)
+    const milestone = role?.milestones.find((item) => item.id === focusTarget.milestoneId)
+    if (!company || !role || !milestone) {
+      onFocusHandled?.()
+      return
+    }
+
+    setOpenCompanies((prev) => ({ ...prev, [focusTarget.companyId]: true }))
+    setOpenRoles((prev) => ({ ...prev, [`${focusTarget.companyId}:${focusTarget.roleId}`]: true }))
+
+    const timer = window.setTimeout(() => {
+      document
+        .getElementById(`milestone-${focusTarget.milestoneId}`)
+        ?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+
+      if (milestone.detail) {
+        setActive(milestone)
+      }
+      onFocusHandled?.()
+    }, 120)
+
+    return () => window.clearTimeout(timer)
+  }, [focusTarget, copy.companies, onFocusHandled])
 
   const toggleCompany = (companyId: string) => {
     setOpenCompanies((prev) => ({ ...prev, [companyId]: !prev[companyId] }))

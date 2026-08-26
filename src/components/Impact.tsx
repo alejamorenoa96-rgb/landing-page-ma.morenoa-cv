@@ -1,5 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLanguage } from '../context/useLanguage'
+import {
+  EXPERIENCE_FOCUS_EVENT,
+  type ExperienceFocusTarget,
+} from '../content/metricTargets'
 import { AnabionDeepDive } from './AnabionDeepDive'
 import { ExperienceTree } from './ExperienceTree'
 import { InditexDeepDive } from './InditexDeepDive'
@@ -35,6 +39,18 @@ export function Impact() {
   const { t } = useLanguage()
   const [openId, setOpenId] = useState<string>(t.impact.timeline[0].id)
   const [selected, setSelected] = useState<string | null>('inditex')
+  const [focusTarget, setFocusTarget] = useState<ExperienceFocusTarget | null>(null)
+
+  useEffect(() => {
+    const onFocus = (event: Event) => {
+      const detail = (event as CustomEvent<ExperienceFocusTarget>).detail
+      setOpenId('experience')
+      setFocusTarget(detail)
+    }
+
+    window.addEventListener(EXPERIENCE_FOCUS_EVENT, onFocus)
+    return () => window.removeEventListener(EXPERIENCE_FOCUS_EVENT, onFocus)
+  }, [])
 
   const consultingItems = t.impact.timeline.find((chapter) => chapter.id === 'consulting')?.items ?? []
   const companies = consultingItems as TimelineItem[]
@@ -76,7 +92,10 @@ export function Impact() {
                   <div className="timeline__body">
                     {isExperience ? (
                       <div className="impact__panel impact__panel--experience" aria-live="polite">
-                        <ExperienceTree />
+                        <ExperienceTree
+                          focusTarget={focusTarget}
+                          onFocusHandled={() => setFocusTarget(null)}
+                        />
                       </div>
                     ) : (
                       <>

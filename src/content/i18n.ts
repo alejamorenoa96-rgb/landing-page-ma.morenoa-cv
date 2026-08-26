@@ -5,6 +5,7 @@ export const content = {
     nav: {
       home: 'Home',
       impact: 'Impact',
+      toolkit: 'Toolkit',
       contact: 'Contact',
       langToggle: 'ES',
     },
@@ -21,12 +22,18 @@ export const content = {
     metrics: {
       eyebrow: 'Results',
       title: 'How I moved the needle',
+      detailLabel: 'View detail',
       items: [
-        { value: '90%', label: 'NPS — Middle Leadership Programme' },
-        { value: '53% → 89%', label: 'Individual development plan adoption' },
-        { value: '-30%', label: 'Time spent on talent reviews' },
-        { value: '+42.8%', label: 'University partnership growth' },
+        { value: '90%', label: 'NPS · Middle Leadership Programme', target: 'inside-out' },
+        { value: '53% → 89%', label: 'Individual development plan adoption', target: 'idps' },
+        { value: '-30%', label: 'Time spent on talent reviews', target: 'talent-reviews' },
+        { value: '+42.8%', label: 'University partnership growth', target: 'supply-trainee' },
       ],
+    },
+    toolkit: {
+      eyebrow: 'Toolkit',
+      title: 'Tools I work with',
+      subtitle: 'The stack I use to design, automate and make people decisions sharper.',
     },
     impact: {
       eyebrow: 'Impact',
@@ -119,6 +126,7 @@ export const content = {
     nav: {
       home: 'Home',
       impact: 'Impacto',
+      toolkit: 'Toolkit',
       contact: 'Contacto',
       langToggle: 'EN',
     },
@@ -135,12 +143,18 @@ export const content = {
     metrics: {
       eyebrow: 'Resultados',
       title: 'Cómo generé impacto',
+      detailLabel: 'Ver detalle',
       items: [
-        { value: '90%', label: 'NPS — Middle Leadership Programme' },
-        { value: '53% → 89%', label: 'Adopción de planes de desarrollo individual' },
-        { value: '-30%', label: 'Tiempo invertido en talent reviews' },
-        { value: '+42.8%', label: 'Crecimiento de alianzas universitarias' },
+        { value: '90%', label: 'NPS · Middle Leadership Programme', target: 'inside-out' },
+        { value: '53% → 89%', label: 'Adopción de planes de desarrollo individual', target: 'idps' },
+        { value: '-30%', label: 'Tiempo invertido en talent reviews', target: 'talent-reviews' },
+        { value: '+42.8%', label: 'Crecimiento de alianzas universitarias', target: 'supply-trainee' },
       ],
+    },
+    toolkit: {
+      eyebrow: 'Toolkit',
+      title: 'Con qué trabajo',
+      subtitle: 'Las herramientas que uso para diseñar, automatizar y tomar mejores decisiones de people.',
     },
     impact: {
       eyebrow: 'Impacto',

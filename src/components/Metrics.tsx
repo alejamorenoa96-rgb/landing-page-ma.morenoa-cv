@@ -1,3 +1,4 @@
+import { requestExperienceFocus } from '../content/metricTargets'
 import { useLanguage } from '../context/useLanguage'
 import './Metrics.css'
 
@@ -43,6 +44,16 @@ export function Metrics() {
               <div className="metrics__text">
                 <p className="metrics__value">{item.value}</p>
                 <p className="metrics__label">{item.label}</p>
+                <button
+                  type="button"
+                  className="metrics__detail"
+                  onClick={() => {
+                    requestExperienceFocus(item.target)
+                    document.getElementById('impact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  }}
+                >
+                  {t.metrics.detailLabel} <span aria-hidden="true">→</span>
+                </button>
               </div>
             </article>
           ))}

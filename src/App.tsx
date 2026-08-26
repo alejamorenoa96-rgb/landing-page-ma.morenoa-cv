@@ -4,6 +4,7 @@ import { Hero } from './components/Hero'
 import { Impact } from './components/Impact'
 import { Metrics } from './components/Metrics'
 import { Nav } from './components/Nav'
+import { Toolkit } from './components/Toolkit'
 import { LanguageProvider } from './context/LanguageContext'
 
 function AppShell() {
@@ -14,6 +15,7 @@ function AppShell() {
         <Hero />
         <Metrics />
         <Impact />
+        <Toolkit />
         <Contact />
       </main>
       <Footer />

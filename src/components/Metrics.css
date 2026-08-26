@@ -53,6 +53,21 @@
   overflow: hidden;
 }
 
+.metrics__detail {
+  margin-top: 0.55rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.metrics__detail:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .metrics__inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));

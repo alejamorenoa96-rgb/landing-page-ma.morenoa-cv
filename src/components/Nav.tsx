@@ -5,6 +5,7 @@ import './Nav.css'
 const links = [
   { href: '#top', key: 'home' as const },
   { href: '#impact', key: 'impact' as const },
+  { href: '#toolkit', key: 'toolkit' as const },
   { href: '#contact', key: 'contact' as const },
 ]
 
