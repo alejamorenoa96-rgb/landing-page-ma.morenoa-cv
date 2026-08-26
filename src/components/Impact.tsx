@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { useLanguage } from '../context/useLanguage'
 import { AnabionDeepDive } from './AnabionDeepDive'
+import { ExperienceTree } from './ExperienceTree'
 import { InditexDeepDive } from './InditexDeepDive'
 import { SuntoryDeepDive } from './SuntoryDeepDive'
 import './Impact.css'
 
-const wordmarkIds = new Set(['inditex', 'anabion', 'suntory', 'ubits', 'bavaria'])
+const wordmarkIds = new Set(['inditex', 'anabion', 'suntory'])
 
 function Wordmark({ id }: { id: string }) {
   if (id === 'suntory') {
@@ -17,16 +18,8 @@ function Wordmark({ id }: { id: string }) {
     )
   }
 
-  if (id === 'bavaria') {
-    return <span className="wordmark wordmark--bavaria">AB INBEV - BAVARIA</span>
-  }
-
   if (id === 'anabion') {
     return <span className="wordmark wordmark--anabion">ANABION</span>
-  }
-
-  if (id === 'ubits') {
-    return <span className="wordmark wordmark--ubits">UBITS</span>
   }
 
   return <span className="wordmark wordmark--inditex">INDITEX</span>
@@ -43,7 +36,8 @@ export function Impact() {
   const [openId, setOpenId] = useState<string>(t.impact.timeline[0].id)
   const [selected, setSelected] = useState<string | null>('inditex')
 
-  const companies = t.impact.timeline.flatMap((chapter) => [...chapter.items]) as TimelineItem[]
+  const consultingItems = t.impact.timeline.find((chapter) => chapter.id === 'consulting')?.items ?? []
+  const companies = consultingItems as TimelineItem[]
   const active = companies.find((item) => item.id === selected)
 
   return (
@@ -58,6 +52,7 @@ export function Impact() {
         <ol className="timeline">
           {t.impact.timeline.map((chapter) => {
             const isOpen = openId === chapter.id
+            const isExperience = chapter.id === 'experience'
 
             return (
               <li key={chapter.id} className={`timeline__item${isOpen ? ' is-open' : ''}`}>
@@ -67,7 +62,7 @@ export function Impact() {
                   aria-expanded={isOpen}
                   onClick={() => {
                     setOpenId(isOpen ? '' : chapter.id)
-                    if (!isOpen) setSelected(null)
+                    if (!isOpen && !isExperience) setSelected(null)
                   }}
                 >
                   <span className="timeline__dot" aria-hidden="true" />
@@ -79,43 +74,51 @@ export function Impact() {
 
                 {isOpen ? (
                   <div className="timeline__body">
-                    <div className="impact__tiles">
-                      {chapter.items.map((item) => {
-                        const hasWordmark = wordmarkIds.has(item.id)
-                        return (
-                          <button
-                            key={item.id}
-                            type="button"
-                            className={`impact__tile${hasWordmark ? ' impact__tile--logo' : ''}${selected === item.id ? ' is-active' : ''}`}
-                            onClick={() => setSelected(item.id)}
-                          >
-                            {hasWordmark ? (
-                              <Wordmark id={item.id} />
-                            ) : (
-                              <span className="impact__tile-name">{item.name}</span>
-                            )}
-                            <span className="impact__tile-meta">{item.meta}</span>
-                          </button>
-                        )
-                      })}
-                    </div>
-
-                    {active && chapter.items.some((item) => item.id === selected) ? (
-                      <div className="impact__panel" aria-live="polite">
-                        {active.id === 'inditex' ? (
-                          <InditexDeepDive />
-                        ) : active.id === 'anabion' ? (
-                          <AnabionDeepDive />
-                        ) : active.id === 'suntory' ? (
-                          <SuntoryDeepDive />
-                        ) : (
-                          <>
-                            <p className="impact__panel-kicker">{active.name}</p>
-                            <p>{t.impact.placeholder}</p>
-                          </>
-                        )}
+                    {isExperience ? (
+                      <div className="impact__panel impact__panel--experience" aria-live="polite">
+                        <ExperienceTree />
                       </div>
-                    ) : null}
+                    ) : (
+                      <>
+                        <div className="impact__tiles">
+                          {chapter.items.map((item) => {
+                            const hasWordmark = wordmarkIds.has(item.id)
+                            return (
+                              <button
+                                key={item.id}
+                                type="button"
+                                className={`impact__tile${hasWordmark ? ' impact__tile--logo' : ''}${selected === item.id ? ' is-active' : ''}`}
+                                onClick={() => setSelected(item.id)}
+                              >
+                                {hasWordmark ? (
+                                  <Wordmark id={item.id} />
+                                ) : (
+                                  <span className="impact__tile-name">{item.name}</span>
+                                )}
+                                <span className="impact__tile-meta">{item.meta}</span>
+                              </button>
+                            )
+                          })}
+                        </div>
+
+                        {active && chapter.items.some((item) => item.id === selected) ? (
+                          <div className="impact__panel" aria-live="polite">
+                            {active.id === 'inditex' ? (
+                              <InditexDeepDive />
+                            ) : active.id === 'anabion' ? (
+                              <AnabionDeepDive />
+                            ) : active.id === 'suntory' ? (
+                              <SuntoryDeepDive />
+                            ) : (
+                              <>
+                                <p className="impact__panel-kicker">{active.name}</p>
+                                <p>{t.impact.placeholder}</p>
+                              </>
+                            )}
+                          </div>
+                        ) : null}
+                      </>
+                    )}
                   </div>
                 ) : null}
               </li>

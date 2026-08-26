@@ -31,7 +31,7 @@ export const content = {
     impact: {
       eyebrow: 'Impact',
       title: 'Where and how I created results',
-      subtitle: 'Reverse chronological. Open a chapter, then a company, to see the intervention.',
+      subtitle: 'Reverse chronological. Open a chapter, then a company, then a role to see milestones.',
       placeholder: 'Detail coming next — context, what I did, and the result.',
       details: {
         inditex: {
@@ -145,7 +145,7 @@ export const content = {
     impact: {
       eyebrow: 'Impacto',
       title: 'Dónde y cómo generé resultado',
-      subtitle: 'Orden cronológico inverso. Abre un capítulo y luego una empresa para ver la intervención.',
+      subtitle: 'Orden cronológico inverso. Abre un capítulo, luego una empresa y un cargo para ver los hitos.',
       placeholder: 'Detalle próximamente — contexto, qué hice y el resultado.',
       details: {
         inditex: {
@@ -233,10 +233,14 @@ export const content = {
 
 export const contact = {
   email: 'alejamorenoa96@gmail.com',
+  emailHref:
+    'https://mail.google.com/mail/?view=cm&fs=1&to=alejamorenoa96@gmail.com',
   linkedin: 'https://www.linkedin.com/in/ma-alejandra-moreno-aguirre',
-  cvPath: '/CV_MariaAlejandra_Moreno.pdf',
+  cvPathEn: '/CV_MariaAlejandra_Moreno.pdf',
+  cvPathEs: '/CV_MariaAlejandra_Moreno_ES.pdf',
   phone: '+34 603 597 290',
   phoneHref: 'tel:+34603597290',
-  whatsapp: 'https://wa.me/34603597290',
+  whatsappDisplay: '+57 315 671 1060',
+  whatsapp: 'https://wa.me/573156711060',
   location: 'Madrid, Spain',
 }

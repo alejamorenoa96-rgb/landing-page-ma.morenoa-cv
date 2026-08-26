@@ -3,7 +3,8 @@ import { useLanguage } from '../context/useLanguage'
 import './Contact.css'
 
 export function Contact() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
+  const cvPath = lang === 'es' ? contact.cvPathEs : contact.cvPathEn
 
   return (
     <section className="contact" id="contact">
@@ -21,9 +22,9 @@ export function Contact() {
           </a>
           <a className="contact__card" href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
             <span>{t.contact.whatsappLabel}</span>
-            <strong>{contact.phone}</strong>
+            <strong>{contact.whatsappDisplay}</strong>
           </a>
-          <a className="contact__card" href={`mailto:${contact.email}`}>
+          <a className="contact__card" href={contact.emailHref} target="_blank" rel="noopener noreferrer">
             <span>{t.contact.emailLabel}</span>
             <strong>{contact.email}</strong>
           </a>
@@ -33,7 +34,7 @@ export function Contact() {
           </a>
         </div>
 
-        <a className="btn btn--primary contact__cv" href={contact.cvPath} download>
+        <a className="btn btn--primary contact__cv" href={cvPath} download>
           {t.contact.cvLabel} <span aria-hidden="true">→</span>
         </a>
       </div>
