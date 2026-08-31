@@ -25,7 +25,7 @@ export const content = {
       title: 'How I moved the needle',
       detailLabel: 'View detail',
       items: [
-        { value: '90%', label: 'Avg. NPS · Inside Out · 3 cohorts', target: 'inside-out' },
+        { value: '90%', label: 'Avg. NPS · leadership programme · 3 cohorts', target: 'inside-out' },
         { value: '53% → 89%', label: 'IDP adoption · in 6 months', target: 'idps' },
         { value: '-30%', label: 'Time in talent reviews · vs. previous cycle', target: 'talent-reviews' },
         { value: '+42.8%', label: 'University partnerships · YoY growth', target: 'supply-trainee' },
@@ -149,7 +149,7 @@ export const content = {
       title: 'Cómo generé impacto',
       detailLabel: 'Ver detalle',
       items: [
-        { value: '90%', label: 'NPS promedio · Inside Out · 3 cohortes', target: 'inside-out' },
+        { value: '90%', label: 'NPS promedio · programa de liderazgo · 3 cohortes', target: 'inside-out' },
         { value: '53% → 89%', label: 'Adopción de PDIs · en 6 meses', target: 'idps' },
         { value: '-30%', label: 'Tiempo en talent reviews · vs. ciclo anterior', target: 'talent-reviews' },
         { value: '+42.8%', label: 'Alianzas universitarias · crecimiento YoY', target: 'supply-trainee' },
