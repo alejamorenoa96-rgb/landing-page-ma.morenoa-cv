@@ -19,7 +19,7 @@ export function Hero() {
               <a className="btn btn--primary" href="#impact">
                 {t.hero.ctaPrimary} <span aria-hidden="true">→</span>
               </a>
-              <a className="btn btn--secondary" href={cvPath} download>
+              <a className="btn btn--primary" href={cvPath} download>
                 {t.contact.cvLabel} <span aria-hidden="true">↓</span>
               </a>
             </div>
