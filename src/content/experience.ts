@@ -53,7 +53,7 @@ export const experienceContent = {
               {
                 id: 'ai-expert',
                 label:
-                  'Designed and implemented the in-house AI upskilling program "From 0 to AI Expert": bi-weekly webinars led by internal experts so every function launched at least two projects applying AI to improve internal processes. $500 prize for the best business case.',
+                  'Designed and implemented the in-house AI upskilling program "From 0 to AI Expert": bi-weekly webinars led by internal experts so every department launched at least two projects applying AI to improve internal processes. $500 prize for the best business case.',
               },
             ],
           },
