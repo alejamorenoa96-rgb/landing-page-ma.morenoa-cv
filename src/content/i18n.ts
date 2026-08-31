@@ -12,7 +12,7 @@ export const content = {
     hero: {
       greeting: 'I am Maria Alejandra',
       headline:
-        'I design and turn talent strategy into measurable people systems to drive high-performing teams within the business.',
+        'I design and turn talent strategy into measurable people systems that drive high-performing teams within the business.',
       subhead:
         "Development, performance and talent acquisition with metrics that don't just measure results: they enable better decisions, refine processes and sustain growth for people and the organisation.",
       notes:
@@ -136,7 +136,7 @@ export const content = {
     hero: {
       greeting: 'Soy Maria Alejandra',
       headline:
-        'Desarrollo y convierto la estrategia de talento en sistemas de people medibles para impulsar equipos de alto rendimiento dentro del negocio.',
+        'Desarrollo y convierto la estrategia de talento en sistemas de people medibles que impulsan equipos de alto rendimiento dentro del negocio.',
       subhead:
         'Desarrollo, desempeño y atracción de talento con métricas que no solo miden resultados: permiten decidir mejor, ajustar procesos y sostener el crecimiento de las personas y de la organización.',
       notes:
