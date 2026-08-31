@@ -26,6 +26,14 @@ function MailIcon() {
   )
 }
 
+function PhoneIcon() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8">
+      <path d="M6.5 4h3l1.5 5-2 1.5a11 11 0 005 5L15.5 13.5 20.5 15v3a2 2 0 01-2.2 2 17.5 17.5 0 01-10.3-10.3A2 2 0 016.5 4z" />
+    </svg>
+  )
+}
+
 function WhatsAppIcon() {
   return (
     <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
@@ -70,6 +78,9 @@ export function Nav() {
           aria-label="WhatsApp"
         >
           <WhatsAppIcon />
+        </a>
+        <a className="nav__icon" href={contact.phoneHref} aria-label={t.contact.phoneLabel}>
+          <PhoneIcon />
         </a>
         <a
           className="nav__icon"
