@@ -85,6 +85,17 @@
   background: var(--accent-deep);
 }
 
+.btn--secondary {
+  border: 1.5px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn--secondary:hover {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
 .btn--text {
   padding-inline: 0.2rem;
   background: transparent;

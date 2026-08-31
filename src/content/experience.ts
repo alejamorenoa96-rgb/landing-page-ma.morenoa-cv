@@ -53,7 +53,7 @@ export const experienceContent = {
               {
                 id: 'ai-expert',
                 label:
-                  '“From 0 to AI Expert”: in-house upskilling program with webinars led by internal experts, to drive projects across every function through applied AI, seeking more process efficiency and getting talent to focus where it truly adds value. Internal contest with a $500 prize for the best business case.',
+                  'Designed and implemented the in-house AI upskilling program "From 0 to AI Expert": bi-weekly webinars led by internal experts so every function launched at least two projects applying AI to improve internal processes. $500 prize for the best business case.',
               },
             ],
           },
@@ -70,11 +70,11 @@ export const experienceContent = {
               {
                 id: 'talent-reviews',
                 label:
-                  'Talent review redesign: 1:1 prep framework for leaders + calibration model from 9-box to 6-box → −30% time in review sessions, without losing decision quality.',
+                  'Talent review redesign: 1:1 prep framework for leaders + calibration model from 9-box to 6-box → −30% time in review sessions vs. previous cycle, without losing decision quality.',
                 detail: {
                   metric: '−30%',
-                  metricLabel: 'Time spent on talent review sessions',
-                  body: 'Two moves drove that −30%: simplifying the calibration model from 9-box to 6-box, with clearer, more concrete conversations and less noise; and a 1:1 prep framework so leaders arrived with solid arguments to calibration sessions, raising rigor in decision-making.',
+                  metricLabel: 'Time in talent review sessions · vs. previous cycle',
+                  body: 'Measured in the first semestral cycle after the redesign. Two moves drove that −30%: simplifying the calibration model from 9-box to 6-box, with clearer, more concrete conversations and less noise; and a 1:1 prep framework so leaders arrived with solid arguments to calibration sessions, raising rigor in decision-making.',
                   story: 'Less time in the room. Better-grounded talent decisions.',
                   visual: 'talent-reviews',
                   prepSteps: [
@@ -89,11 +89,11 @@ export const experienceContent = {
               {
                 id: 'inside-out',
                 label:
-                  'Middle Leadership Programme “Inside Out”: built from scratch · 3 cohorts · NPS 90%.',
+                  'Middle Leadership Programme “Inside Out”: built from scratch · 3 cohorts · avg. NPS 90%.',
                 detail: {
                   metric: '90%',
-                  metricLabel: 'NPS · Middle Leadership Programme',
-                  body: 'Designed and ran “Inside Out” from zero: a middle-leadership programme that connects self-awareness with how leaders show up and are perceived by their teams, delivered to three cohorts.',
+                  metricLabel: 'Avg. NPS · 3 cohorts · Middle Leadership Programme',
+                  body: 'Designed and ran “Inside Out” from zero: a middle-leadership programme that connects self-awareness with how leaders show up and are perceived by their teams, delivered across three cohorts.',
                   story: 'Leaders who know themselves lead people better.',
                 },
               },
@@ -121,10 +121,10 @@ export const experienceContent = {
               {
                 id: 'idps',
                 label:
-                  'Individual development plans: competencies defined with leaders, aligned to each person’s growth and to business OKRs → adoption from 53% to 89%.',
+                  'Individual development plans: competencies defined with leaders, aligned to each person’s growth and to business OKRs → adoption from 53% to 89% in 6 months.',
                 detail: {
                   metric: '53% → 89%',
-                  metricLabel: 'Individual development plan adoption',
+                  metricLabel: 'IDP adoption · 6 months',
                   body: 'I made IDPs useful: competencies agreed with each leader, connected to professional growth and to business OKRs, give a clear sense of impact and mobilise execution from intrinsic motivation.',
                   story: 'When growth is clear for the person and for the business, the plan makes sense.',
                 },
@@ -144,18 +144,18 @@ export const experienceContent = {
               {
                 id: 'onboarding',
                 label:
-                  'End-to-end onboarding as the main HR contact for new joiners → NPS 84.',
+                  'Designed and implemented end-to-end onboarding as the main HR contact → 80+ new joiners with NPS 84.',
                 detail: {
                   metric: '84',
                   metricLabel: 'NPS · onboarding experience',
-                  body: 'I led onboarding end to end as the HR face for new joiners: from coordinating equipment and welcome kits to running onboarding sessions, tracking attendance and measuring NPS across those sessions.',
+                  body: 'I designed and led onboarding end to end as the HR face for new joiners: from coordinating equipment and welcome kits to running onboarding sessions, tracking attendance and measuring NPS across those sessions — impacting 80+ new joiners.',
                   story: 'The challenge is a friendly, clear onboarding: a key moment that shapes how the rest of the learning curve unfolds.',
                 },
               },
               {
                 id: 'saas',
                 label:
-                  'In-house SaaS learning platform admin, aligning learning paths with individual development plans.',
+                  'Managed the in-house SaaS learning platform: designed training plans aligned to the competencies in individual development plans for 250 employees.',
               },
             ],
           },
@@ -174,7 +174,7 @@ export const experienceContent = {
               {
                 id: 'recruiting',
                 label:
-                  'End-to-end recruiting across Logistics, Marketing and Communications.',
+                  'Led end-to-end recruiting across Logistics, Marketing and Communications → ~35-day time to fill.',
               },
               {
                 id: 'supply-trainee',
@@ -182,7 +182,7 @@ export const experienceContent = {
                   'Supply Trainee Programme: partnered with senior leaders to select top talent → +42.8% university partnerships YoY, plus assessments for highly qualified profiles.',
                 detail: {
                   metric: '+42.8%',
-                  metricLabel: 'University partnership growth (YoY)',
+                  metricLabel: 'University partnership growth · YoY · Supply Trainee Programme',
                   body: 'As People Continuity partner on the Supply Trainee Programme, I worked with senior leaders on selection and expanded the university alliance base that fed the pipeline.',
                   story: 'We reached more talent and built a stronger pool, not only for this programme but for future vacancies: a proactive coverage strategy.',
                 },
@@ -211,7 +211,7 @@ export const experienceContent = {
               {
                 id: 'ai-expert',
                 label:
-                  '“From 0 to AI Expert”: upskilling inhouse con webinars liderados por expertos internos, para impulsar proyectos en todas las áreas a través de IA aplicada, buscando más eficiencia dentro de los procesos y que el talento estuviera enfocado donde realmente aporta. Concurso interno con premio de 500 USD al mejor caso de negocio.',
+                  'Diseñé e implementé el programa de upskilling en IA "From 0 to AI Expert": webinars quincenales con expertos internos para que cada área lanzara al menos dos proyectos que aplicaran IA y mejoraran procesos internos. Premio de 500 USD al mejor caso de negocio.',
               },
             ],
           },
@@ -228,11 +228,11 @@ export const experienceContent = {
               {
                 id: 'talent-reviews',
                 label:
-                  'Rediseño de talent reviews: framework de preparación 1:1 para líderes y calibración de 9-box a 6-box → −30% tiempo en sesiones, sin perder rigor.',
+                  'Rediseño de talent reviews: framework de preparación 1:1 para líderes y calibración de 9-box a 6-box → −30% tiempo en sesiones vs. ciclo anterior, sin perder rigor.',
                 detail: {
                   metric: '−30%',
-                  metricLabel: 'Tiempo invertido en sesiones de talent review',
-                  body: 'Dos movimientos llevaron a ese −30%: la simplificación del modelo de calibración de 9-box a 6-box, con conversaciones más claras, concretas y con menos ruido; y un framework de preparación 1:1 para que los líderes llegaran con argumentos sólidos a las sesiones de calibración, aumentando el rigor en la toma de decisiones.',
+                  metricLabel: 'Tiempo en sesiones de talent review · vs. ciclo anterior',
+                  body: 'Medido en la primera ronda semestral tras el rediseño. Dos movimientos llevaron a ese −30%: la simplificación del modelo de calibración de 9-box a 6-box, con conversaciones más claras, concretas y con menos ruido; y un framework de preparación 1:1 para que los líderes llegaran con argumentos sólidos a las sesiones de calibración, aumentando el rigor en la toma de decisiones.',
                   story: 'Menos tiempo en la sala. Decisiones de talento mejor fundamentadas.',
                   visual: 'talent-reviews',
                   prepSteps: [
@@ -247,11 +247,11 @@ export const experienceContent = {
               {
                 id: 'inside-out',
                 label:
-                  'Middle Leadership Programme “Inside Out”: diseñado desde cero · 3 cohortes · NPS 90%.',
+                  'Middle Leadership Programme “Inside Out”: diseñado desde cero · 3 cohortes · NPS promedio 90%.',
                 detail: {
                   metric: '90%',
-                  metricLabel: 'NPS · Middle Leadership Programme',
-                  body: 'Diseñé y ejecuté “Inside Out” desde cero: un programa de middle leadership que conecta autoconocimiento con cómo los líderes se muestran y son percibidos por sus equipos, entregado a tres cohortes.',
+                  metricLabel: 'NPS promedio · 3 cohortes · Middle Leadership Programme',
+                  body: 'Diseñé y ejecuté “Inside Out” desde cero: un programa de middle leadership que conecta autoconocimiento con cómo los líderes se muestran y son percibidos por sus equipos, entregado en tres cohortes.',
                   story: 'Líderes que se conocen, lideran mejor a su gente.',
                 },
               },
@@ -279,10 +279,10 @@ export const experienceContent = {
               {
                 id: 'idps',
                 label:
-                  'Planes de desarrollo individual: competencias definidas con líderes, alineadas al crecimiento de cada persona y a los OKRs del negocio → adopción de 53% a 89%.',
+                  'Planes de desarrollo individual: competencias definidas con líderes, alineadas al crecimiento de cada persona y a los OKRs del negocio → adopción de 53% a 89% en 6 meses.',
                 detail: {
                   metric: '53% → 89%',
-                  metricLabel: 'Adopción de planes de desarrollo individual',
+                  metricLabel: 'Adopción de PDIs · 6 meses',
                   body: 'Hice útiles los PDIs: competencias acordadas con cada líder, conectadas al crecimiento profesional y a los OKRs del negocio, dan un propósito claro de su impacto, movilizando su ejecución desde la motivación intrínseca.',
                   story: 'Cuando el crecimiento es claro para la persona y para el negocio, el plan cobra sentido.',
                 },
@@ -302,18 +302,18 @@ export const experienceContent = {
               {
                 id: 'onboarding',
                 label:
-                  'Onboarding end-to-end como principal contacto de HR para nuevos ingresos → NPS 84.',
+                  'Diseñé e implementé el onboarding end-to-end como contacto principal de HR → +80 nuevos ingresos con NPS 84.',
                 detail: {
                   metric: '84',
                   metricLabel: 'NPS · experiencia de onboarding',
-                  body: 'Lideré el onboarding de punta a punta como cara de HR para nuevos ingresos: desde gestionar la entrega de equipos y el kit de bienvenida hasta asegurar las sesiones de onboarding, midiendo asistencia y NPS de cada una.',
+                  body: 'Diseñé y lideré el onboarding de punta a punta como cara de HR para nuevos ingresos: desde gestionar la entrega de equipos y el kit de bienvenida hasta asegurar las sesiones de onboarding, midiendo asistencia y NPS de cada una — impactando a más de 80 nuevos ingresos.',
                   story: 'El reto es garantizar un onboarding amigable y claro, un momento clave que define cómo se desenvuelven los siguientes pasos de la curva de aprendizaje.',
                 },
               },
               {
                 id: 'saas',
                 label:
-                  'Administración de plataforma SaaS inhouse, alineando rutas de aprendizaje con planes de desarrollo individual.',
+                  'Administré la plataforma SaaS inhouse: diseñé planes de formación alineados a las competencias de los PDIs de 250 empleados.',
               },
             ],
           },
@@ -332,7 +332,7 @@ export const experienceContent = {
               {
                 id: 'recruiting',
                 label:
-                  'Reclutamiento end-to-end en Logística, Marketing y Comunicaciones.',
+                  'Lideré reclutamiento end-to-end en Logística, Marketing y Comunicaciones → time to fill ~35 días.',
               },
               {
                 id: 'supply-trainee',
@@ -340,7 +340,7 @@ export const experienceContent = {
                   'Supply Trainee Programme: partnering con líderes senior en selección de talento top → +42.8% en alianzas universitarias YoY, con assessments para perfiles altamente cualificados.',
                 detail: {
                   metric: '+42.8%',
-                  metricLabel: 'Crecimiento de alianzas universitarias (YoY)',
+                  metricLabel: 'Crecimiento de alianzas universitarias · YoY · Supply Trainee Programme',
                   body: 'Como partner de People Continuity en el Supply Trainee Programme, trabajé con líderes senior en la selección y expandí la red de alianzas universitarias que alimentaba el pipeline.',
                   story: 'Abordamos más talento y fortalecimos el talent pool, no solo para este programa sino para vacantes futuras: una estrategia proactiva de cobertura.',
                 },

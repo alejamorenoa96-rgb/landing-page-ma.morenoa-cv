@@ -29,6 +29,16 @@ function Wordmark({ id }: { id: string }) {
   return <span className="wordmark wordmark--inditex">INDITEX</span>
 }
 
+function ExpandChevron({ className = '' }: { className?: string }) {
+  return (
+    <span className={`expand-chevron ${className}`.trim()} aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </span>
+  )
+}
+
 type TimelineItem = {
   id: string
   name: string
@@ -85,6 +95,12 @@ export function Impact() {
                   <span className="timeline__label">
                     <strong>{chapter.title}</strong>
                     <span>({chapter.years})</span>
+                  </span>
+                  <span className="timeline__expand">
+                    <span className="timeline__expand-text">
+                      {isOpen ? t.impact.collapseHint : t.impact.expandHint}
+                    </span>
+                    <ExpandChevron className={isOpen ? 'is-open' : ''} />
                   </span>
                 </button>
 

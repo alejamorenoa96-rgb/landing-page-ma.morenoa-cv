@@ -1,8 +1,10 @@
+import { contact } from '../content/i18n'
 import { useLanguage } from '../context/useLanguage'
 import './Hero.css'
 
 export function Hero() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
+  const cvPath = lang === 'es' ? contact.cvPathEs : contact.cvPathEn
 
   return (
     <section className="hero" id="top">
@@ -17,8 +19,8 @@ export function Hero() {
               <a className="btn btn--primary" href="#impact">
                 {t.hero.ctaPrimary} <span aria-hidden="true">→</span>
               </a>
-              <a className="btn btn--text" href="#contact">
-                {t.hero.ctaSecondary} <span aria-hidden="true">→</span>
+              <a className="btn btn--secondary" href={cvPath} download>
+                {t.contact.cvLabel} <span aria-hidden="true">↓</span>
               </a>
             </div>
           </div>

@@ -12,10 +12,11 @@ export const content = {
     hero: {
       greeting: 'I am Maria Alejandra',
       headline:
-        'HR reaches its full potential when it connects the whole organisation, from leadership to entry level, around one shared purpose.',
+        'I design and turn talent strategy into measurable people systems the business adopts to drive high-performing teams.',
       subhead:
-        "With 5 years across the full HR cycle and my Master's in Talent Development, I'm the bridge that keeps every process running efficiently and in sync, making space for what actually drives any company's success: its people's development.",
-      notes: 'Master in Talent Development @ IE · English C1 · Madrid',
+        "Development, performance and talent acquisition with metrics that don't just measure results: they enable better decisions, refine processes and sustain growth for people and the organisation.",
+      notes:
+        'Master in Talent Development & HR @ IE Business School · English C1 · Madrid · Work permit',
       ctaPrimary: 'See my impact',
       ctaSecondary: "Let's talk now",
     },
@@ -24,10 +25,10 @@ export const content = {
       title: 'How I moved the needle',
       detailLabel: 'View detail',
       items: [
-        { value: '90%', label: 'NPS · Middle Leadership Programme', target: 'inside-out' },
-        { value: '53% → 89%', label: 'Individual development plan adoption', target: 'idps' },
-        { value: '-30%', label: 'Time spent on talent reviews', target: 'talent-reviews' },
-        { value: '+42.8%', label: 'University partnership growth', target: 'supply-trainee' },
+        { value: '90%', label: 'Avg. NPS · Inside Out · 3 cohorts', target: 'inside-out' },
+        { value: '53% → 89%', label: 'IDP adoption · in 6 months', target: 'idps' },
+        { value: '-30%', label: 'Time in talent reviews · vs. previous cycle', target: 'talent-reviews' },
+        { value: '+42.8%', label: 'University partnerships · YoY growth', target: 'supply-trainee' },
       ],
     },
     toolkit: {
@@ -39,10 +40,12 @@ export const content = {
       eyebrow: 'Impact',
       title: 'Where and how I created results',
       subtitle: 'Reverse chronological. Open a chapter, then a company, then a role to see milestones.',
+      expandHint: 'Expand',
+      collapseHint: 'See less',
       placeholder: 'Detail coming next — context, what I did, and the result.',
       details: {
         inditex: {
-          eyebrow: 'Best Final Corporate Project · IE × Inditex (Zara)',
+          eyebrow: 'Best Final Corporate Project · IE Business School × Inditex (Zara)',
           title: 'Presence+ — absenteeism dashboard for store managers',
           challenge:
             'Zara store managers across Europe needed more than an absenteeism dashboard they often lack time to interpret. In high-turnover retail, dashboards only work when they become a practical guide — pointing managers to concrete actions they can run quickly.',
@@ -56,7 +59,7 @@ export const content = {
           close: 'Close',
         },
         anabion: {
-          eyebrow: 'IE × Anabion · Biopharma · 2025',
+          eyebrow: 'IE Business School × Anabion · Biopharma · 2025',
           title: 'ANABION Talent Market Analytics Hub',
           challenge:
             'In a highly competitive industry like pharma, Anabion needed a talent pool that worked proactively. Instead of continuing acquisition through non-centralised flows across 15 countries, we built a Talent Market Analytics Hub.',
@@ -68,7 +71,7 @@ export const content = {
           close: 'Close',
         },
         suntory: {
-          eyebrow: 'IE × Suntory · FMCG · Toledo · 2025',
+          eyebrow: 'IE Business School × Suntory · FMCG · Toledo · 2025',
           title: 'Empowering Factory Teams',
           challenge:
             'At Suntory’s Toledo factory, HR needed to increase operators’ use of MySU — the internal LMS. After plant visits and 12 interviews with operators and leaders, the issue was not only “lack of use”: most leaders did little follow-up and barely promoted MySU; access was hard — little time, few devices, password friction, slow UX; and the content did not feel useful against real work on the plant floor.',
@@ -133,10 +136,11 @@ export const content = {
     hero: {
       greeting: 'Soy Maria Alejandra',
       headline:
-        'HR logra su máximo potencial cuando conecta a toda la organización, desde liderazgo hasta entry level, bajo un mismo propósito.',
+        'Desarrollo y convierto la estrategia de talento en sistemas de people medibles que el negocio adopta para impulsar equipos de alto rendimiento.',
       subhead:
-        'Con 5 años en el ciclo completo de HR y mi Máster en Talent Development, soy ese puente que garantiza que los procesos funcionen de forma sincronizada y eficiente, dejando espacio para lo que realmente potencializa el éxito de cualquier empresa: el desarrollo de su talento.',
-      notes: 'Master in Talent Development @ IE · Inglés C1 · Madrid',
+        'Desarrollo, desempeño y atracción de talento con métricas que no solo miden resultados: permiten decidir mejor, ajustar procesos y sostener el crecimiento de las personas y de la organización.',
+      notes:
+        'Master in Talent Development & HR @ IE Business School · Inglés C1 · Madrid · Permiso de trabajo',
       ctaPrimary: 'Ver mi impacto',
       ctaSecondary: 'Hablemos',
     },
@@ -145,10 +149,10 @@ export const content = {
       title: 'Cómo generé impacto',
       detailLabel: 'Ver detalle',
       items: [
-        { value: '90%', label: 'NPS · Middle Leadership Programme', target: 'inside-out' },
-        { value: '53% → 89%', label: 'Adopción de planes de desarrollo individual', target: 'idps' },
-        { value: '-30%', label: 'Tiempo invertido en talent reviews', target: 'talent-reviews' },
-        { value: '+42.8%', label: 'Crecimiento de alianzas universitarias', target: 'supply-trainee' },
+        { value: '90%', label: 'NPS promedio · Inside Out · 3 cohortes', target: 'inside-out' },
+        { value: '53% → 89%', label: 'Adopción de PDIs · en 6 meses', target: 'idps' },
+        { value: '-30%', label: 'Tiempo en talent reviews · vs. ciclo anterior', target: 'talent-reviews' },
+        { value: '+42.8%', label: 'Alianzas universitarias · crecimiento YoY', target: 'supply-trainee' },
       ],
     },
     toolkit: {
@@ -160,10 +164,12 @@ export const content = {
       eyebrow: 'Impacto',
       title: 'Dónde y cómo generé resultado',
       subtitle: 'Orden cronológico inverso. Abre un capítulo, luego una empresa y un cargo para ver los hitos.',
+      expandHint: 'Ver más',
+      collapseHint: 'Ver menos',
       placeholder: 'Detalle próximamente — contexto, qué hice y el resultado.',
       details: {
         inditex: {
-          eyebrow: 'Best Final Corporate Project · IE × Inditex (Zara)',
+          eyebrow: 'Best Final Corporate Project · IE Business School × Inditex (Zara)',
           title: 'Presence+ — dashboard de absentismo para store managers',
           challenge:
             'Los store managers de Zara en Europa necesitaban más que un dashboard de absentismo que muchas veces no tienen tiempo de interpretar. En retail de alta rotación, los dashboards sólo sirven si se convierten en una guía práctica: acciones concretas que puedan ejecutar en poco tiempo.',
@@ -177,7 +183,7 @@ export const content = {
           close: 'Cerrar',
         },
         anabion: {
-          eyebrow: 'IE × Anabion · Biopharma · 2025',
+          eyebrow: 'IE Business School × Anabion · Biopharma · 2025',
           title: 'ANABION Talent Market Analytics Hub',
           challenge:
             'Ante un entorno altamente competitivo como lo es la industria farma, se necesitaba un pool de talento que funcionara de manera proactiva. Por esto, en vez de continuar el proceso de adquisición a través de flujos no centralizados para 15 países, se construyó un Talent Market Analytics Hub.',
@@ -189,7 +195,7 @@ export const content = {
           close: 'Cerrar',
         },
         suntory: {
-          eyebrow: 'IE × Suntory · FMCG · Toledo · 2025',
+          eyebrow: 'IE Business School × Suntory · FMCG · Toledo · 2025',
           title: 'Empowering Factory Teams',
           challenge:
             'En la fábrica de Suntory en Toledo, HR necesitaba incrementar el uso de MySU —el LMS interno— entre operarios. Tras visitas a planta y 12 entrevistas con operarios y líderes, el problema no era solo “falta de uso”: la mayoría de líderes no hacían follow-up ni promovían MySU; no había fácil acceso: poco tiempo, pocos dispositivos, inconvenientes con contraseñas, un UX lento; y el contenido no se percibía útil frente al trabajo real en la planta.',
@@ -249,7 +255,7 @@ export const contact = {
   email: 'alejamorenoa96@gmail.com',
   emailHref:
     'https://mail.google.com/mail/?view=cm&fs=1&to=alejamorenoa96@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/ma-alejandra-moreno-aguirre',
+  linkedin: 'https://www.linkedin.com/in/ma-alejandra-moreno/',
   cvPathEn: '/CV_MariaAlejandra_Moreno.pdf',
   cvPathEs: '/CV_MariaAlejandra_Moreno_ES.pdf',
   phone: '+34 603 597 290',

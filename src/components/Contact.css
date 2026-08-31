@@ -47,19 +47,8 @@
   border-color: var(--accent);
 }
 
-.contact__cv {
-  display: inline-flex;
-  margin-inline: auto;
-}
-
 .contact .section-head + .contact__grid {
   margin-top: 0.25rem;
-}
-
-.contact .container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
 }
 
 @media (max-width: 640px) {

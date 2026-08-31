@@ -3,8 +3,7 @@ import { useLanguage } from '../context/useLanguage'
 import './Contact.css'
 
 export function Contact() {
-  const { t, lang } = useLanguage()
-  const cvPath = lang === 'es' ? contact.cvPathEs : contact.cvPathEn
+  const { t } = useLanguage()
 
   return (
     <section className="contact" id="contact">
@@ -30,13 +29,9 @@ export function Contact() {
           </a>
           <a className="contact__card" href={contact.linkedin} target="_blank" rel="noopener noreferrer">
             <span>{t.contact.linkedinLabel}</span>
-            <strong>ma-alejandra-moreno-aguirre</strong>
+            <strong>ma-alejandra-moreno</strong>
           </a>
         </div>
-
-        <a className="btn btn--primary contact__cv" href={cvPath} download>
-          {t.contact.cvLabel} <span aria-hidden="true">→</span>
-        </a>
       </div>
     </section>
   )

@@ -9,6 +9,16 @@ import type { ExperienceFocusTarget } from '../content/metricTargets'
 import { useLanguage } from '../context/useLanguage'
 import './ExperienceTree.css'
 
+function ExpandChevron({ className = '' }: { className?: string }) {
+  return (
+    <span className={`expand-chevron ${className}`.trim()} aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </span>
+  )
+}
+
 function SixBoxVisual() {
   return (
     <div className="sixbox" aria-hidden="true">
@@ -134,9 +144,7 @@ function MilestoneItem({
     <li className="exp-tree__hit exp-tree__hit--action" id={`milestone-${milestone.id}`}>
       <button type="button" className="exp-tree__hit-btn" onClick={() => onOpen(milestone)} aria-label={`${openHint}: ${milestone.label}`}>
         <span>{milestone.label}</span>
-        <span className="exp-tree__hit-cue" aria-hidden="true">
-          →
-        </span>
+        <span className="exp-tree__hit-cue">{openHint}</span>
       </button>
     </li>
   )
@@ -149,7 +157,7 @@ export function ExperienceTree({
   focusTarget?: ExperienceFocusTarget | null
   onFocusHandled?: () => void
 }) {
-  const { lang } = useLanguage()
+  const { lang, t } = useLanguage()
   const copy = experienceContent[lang]
   const [active, setActive] = useState<Milestone | null>(null)
   const [openCompanies, setOpenCompanies] = useState<Record<string, boolean>>({})
@@ -211,6 +219,12 @@ export function ExperienceTree({
                   <strong className="exp-tree__company-name">{company.name}</strong>
                   <span className="exp-tree__company-years">{company.years}</span>
                 </span>
+                <span className="exp-tree__expand">
+                  <span className="exp-tree__expand-text">
+                    {companyOpen ? t.impact.collapseHint : t.impact.expandHint}
+                  </span>
+                  <ExpandChevron className={companyOpen ? 'is-open' : ''} />
+                </span>
               </button>
 
               {companyOpen ? (
@@ -227,7 +241,7 @@ export function ExperienceTree({
                           aria-expanded={isOpen}
                           onClick={() => toggleRole(company.id, role.id)}
                         >
-                          <span className="exp-tree__role-dot" aria-hidden="true" />
+                          <ExpandChevron className={`exp-tree__role-toggle${isOpen ? ' is-open' : ''}`} />
                           <span className="exp-tree__role-label">
                             <strong className="exp-tree__role-title">{role.title}</strong>
                             <span className="exp-tree__role-dates">{role.dates}</span>
